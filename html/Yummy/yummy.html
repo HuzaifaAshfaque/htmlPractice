@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fuggles&family=Kalam&family=Merienda:wght@300&family=Zeyada&display=swap" rel="stylesheet"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fuggles&family=Kalam&family=Merienda:wght@300&family=Zeyada&display=swap');
+
+        :root{
+            --red:#ce1212;
+            --grey: #37373f;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+
+            
+
+        }
+        .outer{
+            min-height: 600px;
+            width:100% ;
+            
+        }
+
+    /* row1 start  */
+
+
+        .row1{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            position: sticky;
+            top: 0%;
+            
+            
+
+        }
+
+        .logo{
+            font-weight: 800;
+            /* background-color: red; */
+            float: left;
+            width: 15%;
+            height: 100%;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 50px;
+        }
+        span{
+            color: var(--red);
+            
+        }
+        .navbar{
+            float: left;
+            width: 70%;
+            height: 100%;
+
+        }
+        ul{
+            list-style: none;  
+            padding-top: 5px;  
+            
+        }
+        li{
+            line-height: 50px;
+            float: left;
+            width: 12.5%;
+            text-align: center;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--grey);
+            
+        }
+        li:hover{
+            color: black;
+            text-decoration: underline 2px var(--red);
+
+        }
+        .btn{
+            padding-top: 2px;
+        }
+        input[value="Book a Table"]{
+            height: 60%;
+            width: 50%;
+            background-color: var(--red);
+            border: none;
+            border-radius: 20px;
+            color: white;
+        }
+
+    /* row1 end  */
+
+    /* row2 start*/
+
+        .row2{
+            height: 500px;
+            width: 100%;
+            background-color: #eeeeee;
+            overflow: hidden;
+        }
+
+        .rleft2{
+            height: 100%;
+            width: 50%;
+            /* background-color: aqua; */
+            padding:10% 2%;
+            float: left;
+        }
+        .rleft2 h2{
+
+            font-size: 3rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        .rleft2 p{
+            padding-bottom: 20px;
+        }
+
+        .btn-book-a-table{
+            background-color: var(--red);
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            width: 30%;
+            height: 40px;
+            font-size: 1.0rem;
+
+            
+        }
+        .rright2{
+            height: 100%;
+            width: 50%;
+            padding:3% 6%;
+            float: left;
+            
+        }
+        .rright2 img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .row3{
+            height: 800px;
+            width: 100%;
+            overflow: hidden;
+
+        }
+        .rtop3{
+            height: 200px;
+            width: 100%;
+            text-align: center;
+            padding-top: 5%;
+            color: var(--grey);
+        }
+
+        .rtop3 h2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            text-transform: uppercase ;
+
+        }
+        .rtop3 p,.abt{
+           font-size: 50px; 
+           font-family: cursive;
+           text-transform: uppercase;
+        }
+        .rbottom3{
+            height: 550px;
+            width: 100%;
+        }
+        .rbleft3{
+            background-image: url('img/about.jpg');
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            padding-top: 400px;
+            float: left;
+        }
+        .tnumber{
+            height: 100px;
+            width: 80%;
+            background-color: white;
+            margin: 0px auto;
+            text-align: center;
+            padding-top: 10px;
+
+            
+        }
+        .rbright3{
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 0px 10px 0px 30px;
+            color: var(--grey);
+        }
+        .rbrighttop3{
+            height: 250px;
+            width: 100%;
+        }
+        .rbrightbot3{
+            height: 300px;
+            width: 100%;
+            padding-top: 10px;
+
+        }
+        .rbrightbot3 img{
+            height: 290px;
+            width: 100%;
+        }
+        .rbright3 p:nth-child(1){
+            font-style: italic;
+            padding-bottom: 10px;
+        }
+
+        .abtp{
+            margin-left: 20px ;
+            padding-bottom: 10px;
+        }
+        .row4{
+            height: 400px;
+            width: 100%;
+            background-color: #eeeeee;
+            padding: 50px;
+            color: white;
+            overflow: hidden;
+            
+        }
+        .r4col1{
+            background-color: #ce1212;
+            width: 34%;
+            height: 100%;
+            float: left;
+            padding: 15px;
+
+            
+
+        
+        }
+        .row4c1btn{
+            margin-top: 30px;
+            margin-left: 28%;
+            height: 40px;
+            width: 40%;
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(255, 255, 255,.2);
+            color: white;
+            font-size: 1.1rem;
+        }
+
+
+        .r4col2{
+            background-color: white;
+            color: black;
+            width: 20%;
+            float: left;
+            margin-left: 20px;
+            padding: 20px;
+            height: 100%;
+            text-align: center;
+        
+            
+
+        }
+        .r4col2 p:first-child{
+            height:40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, .3);
+            margin-left: 35%;
+            margin-top: 20px;
+        }
+
+        .row5{
+            height: 1200px;
+            width: 100%;
+            padding-top: 300px;
+            padding-left: 50px;
+            padding-right: 50px;
+            overflow: hidden;
+            
+        }
+        .row5r1{
+            /* background-color: #ce1212; */
+            height: 300px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .row5r1 p:nth-child(2){
+           font-size: 30px; 
+           font-family: cursive;
+           text-transform: uppercase;
+        }
+
+        .row5r1 ul{
+            margin-left: 28%;
+        }
+        .row5r1 ul li{
+            margin-left: 2%;
+            text-decoration: underline #eeeeee;
+            /* background-color: aqua; */
+        }
+        .row5r1 ul li:hover{
+            margin-left: 2%;
+            color: #ce1212;
+            text-decoration: underline #ce1212;
+        }
+
+        .row5r2{
+            height: 300px;
+            width: 100%;
+            /* background-color: blueviolet; */
+        }
+
+        .row5r2col1{
+            
+            float: left;
+            height: 100%;
+            width: 33.33%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .row5r2col1 img{
+
+            height: 80%;
+            width: 80%;
+            padding-bottom: 20px;
+        }
+
+        .row6r2{
+            height: 200px;
+            width: 100%;
+            margin-left: 100px;
+           
+        }
+
+        .row6left
+        {
+            float: left;
+            width: 60%;
+            height: 90%;
+            color: #000;
+            border-left: 5px solid red;
+            padding-left: 20px;
+
+        }
+
+        .row6right{
+            float: left;
+            width: 40%;
+            height: 70%;
+
+
+        }
+        .row6right img {
+
+            border-radius: 50%;
+            height: 190px;
+            width: 190px;
+        }
+
+        .row6r3{
+            height: 10%;
+            width: 100%;
+            /* background-color: aquamarine; */
+            padding-top: 5px;
+            padding-left: 45%;
+            
+        }
+
+        .row6r3 p{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #37373f;
+            /* margin: 5px auto; */
+            float: left;
+            margin-left: 5px;
+            margin-top: 10px;
+
+        }
+        .row6r3 p:hover{
+            background-color: #ce1212;
+        }
+
+        .row7{
+            height: 650px;
+            width: 100%;
+            /* background-color: #dbd1d1   ; */
+        }
+        .row7top{
+            text-align: center;
+            padding-top: 40px;
+            font-size: 30px;
+            height: 150px
+
+        }
+        .row7bot{
+            height: 400px;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            
+        }
+        .row7botcol1{
+            height: 100%;
+            width: 33.33%;
+            /* background: rgb(138, 134, 134); */
+            text-align: left;
+            padding-top: 250px;
+            padding-left: 20px;
+            color: white;
+            border: 1px solid white;
+            float: left;
+        }
+        .imgr7col1{
+            background: url("img/events-3.jpg");
+            background-size: cover;
+            opacity: .3;
+        }
+        .imgr7col2{
+            background: url("img/events-1.jpg");
+            background-size: cover;
+            opacity: .3;
+            
+        }
+        .imgr7col3{
+            background: url("img/events-2.jpg");
+            background-size: cover;
+            opacity: .3;
+            
+        }
+
+        .row8{
+            height: 700px;
+            width: 100%;
+            background-color: #eeeeee;
+            padding: 50px;
+        }
+        .row8top{
+            text-align: center;
+            padding-top: 40px;
+            height: 150px;
+        }
+
+        .row8bot{
+            height: 450px;
+            width: 100%;
+            padding:20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around   ;
+        }
+        .ro8botcol1{
+            height: 100%;
+            width: 30%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            
+        }
+       
+        
+        
+        .row8botimg{
+            height: 250px;
+            width: 100%;
+            border-bottom:4px ridge white ;
+            border-radius: 10px 10px 0px 0px;
+            margin-bottom: 30px;
+            
+        }
+
+        .row9{
+            height: 700px;
+            width: 100%;
+            
+
+        }
+
+        .row9top{
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            padding-top: 50PX;
+
+        }
+        .row9bot{
+            padding-left: 50px;
+            height: 450px;
+            width: 100%;
+            
+        }
+        .row9bleft{
+            height: 100%;
+            width: 35%;
+            float: left;
+        }
+        .row9botimg{
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .row9bright {
+            height: 100%;
+            width: 60%;
+            float: left;
+            /* background-color: aqua; */
+            padding:100px 30px 50px 30px;
+            background: #eeeeee;
+        }
+
+        .row9bright input{
+            height: 40px;
+            width: 30%;
+            margin: 9px;
+            font-size: 16px;
+            padding-left: 15px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        .row9bright textarea{
+            height: 100px;
+            width: 97%;
+            margin: 10px;
+            font-size: 16px;
+            padding-left: 15px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            padding-top: 10px;
+            
+        }
+
+        .row10{
+            height: 500px;
+            width: 100%;
+            background: #eeeeee;
+        }
+
+        .row10top{
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            padding-top: 50PX;
+        }
+
+        .row10bottom{
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .r10bimg{
+            height: 220px;
+            width: 15%;
+            margin: 10px;
+            padding: 5px;
+            
+            
+        }
+        .r10bimg img{
+            height: 200px;
+            width: 100%;
+            border: 4px solid white;
+            transition: all 1s;
+
+        }
+        .r10bimg:hover{
+           transform: scale(1.2);
+           border:5px solid red;  
+           transition: all 1s;    
+           box-sizing: border-box; 
+        }
+
+
+        
+  
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+            <!-- menu  -->
+        <div class="row1">
+        <div class="logo">Yummy<span>.</span></div>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Events</li>
+                <li>Chefs</li>
+                <li>Gallery</li>
+                <li>Drop Down</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="btn logo">
+            <input type="button" value="Book a Table">
+        </div>
+        </div>
+            <!-- end menu  -->
+            <!-- content  -->
+        <div class="row2">
+            <div class="rleft2">
+                    <h2>Enjoy Your Healthy<br>Delicious Food</h2>
+                    <p >Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <div>
+                      <button href="#" class="btn-book-a-table">Book a Table</button>
+                      <span style="color:black;font-weight: 500;">Watch Video</span>
+                    </div>
+                  
+            </div>
+            <div class="rright2">
+                <img src="img/menu/menu-item-1.png" alt="" srcset="">
+            </div>
+        </div>
+            <!-- end content  -->
+            <!-- start about  -->
+
+        <div class="row3">
+            <div class="rtop3">
+                <h2>About Us</h2>
+                <p>Learn More <span class="abt">About Us</span></p>
+            </div>
+            <div class="rbottom3">
+                <div class="rbleft3">
+                    <div class="tnumber">
+                        <h1 style="color: var(--grey);font-size: 1.4rem;">Book a Table</h1>
+                        <h1 style="color: var(--red);">+1 5589 55488 55</h1>
+                    </div>
+                </div>
+                <div class="rbright3">
+                    <div class="rbrighttop3">
+                        <p >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                          magna aliqua.
+                        </p>
+                    
+                        <p class="abtp">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="abtp">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        <p class="abtp">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                        
+                        <p>
+                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                        </p>
+                    </div>
+                    <div class="rbrightbot3">
+                        <img src="img/about-2.jpg" alt="">
+                    </div>
+                       
+                      
+                </div>
+            </div>
+        </div>
+            <!-- end about  -->
+            <!-- start scroller  -->
+        <div class="row4">
+            <div class="r4col1">
+                <h1 style="padding-bottom: 20px;">Why Choose <br> Yummy?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam adipisci placeat ipsam, facere, dolores, impedit ratione fugit corporis Lorem ipsum dolor sit amet.</p>
+                <button class="row4c1btn">Learn More</button>
+            </div>
+            <div class="r4col2">
+                <p></p><br>
+                <h3>Lorem ipsum dolor sit</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, amet?</p>
+            </div>
+            <div class="r4col2">
+                <p></p><br>
+                <h3>Lorem ipsum dolor sit</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, amet?</p>
+            </div>
+                        <div class="r4col2">
+                <p></p><br>
+                <h3>Lorem ipsum dolor sit</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, amet?</p>
+            </div>
+        </div>
+            <!-- end scroller  -->
+
+            <!-- start checkout -->
+
+        <div class="row5">
+            <div class="row5r1">
+                <p style="color: var(--grey);">OUR MENU</p>
+                <p>CHECK OUR <span class="abt" style="font-size: 30px;">YUMMY MENU</span></p>
+                <ul>
+                    <li>Starters</li>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                </ul><br><br><br>
+                <p>Menu</p>
+                <h1 style="color: var(--red);">Starters</h1>
+            </div>
+            <div class="row5r2">
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-1.png" alt="" srcset="">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$5.95</b></span></p>
+                </div>
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-2.png" alt="" srcset="">
+                    <h3>Aut luia</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$14.95</b></span></p>
+                </div>
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-3.png" alt="" srcset="">
+                    <h3>East Eligendi</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$8.95</b></span></p>
+                </div>
+            </div>
+            <div class="row5r2">
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-4.png" alt="" srcset="">
+                    <h3>Eos Lubisdam</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$5.95</b></span></p>
+                </div>
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-5.png" alt="" srcset="">
+                    <h3>Laboriosam derivie</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$14.95</b></span></p>
+                </div>
+                <div class="row5r2col1">
+                    <img src="img/menu/menu-item-6.png" alt="" srcset="">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><span><b>$8.95</b></span></p>
+                </div>
+            </div>
+        </div>
+            <!-- end checkout -->
+
+            <!-- start testimonials -->
+
+        <div class="row6 row4">
+                <div class="row5r1" style="height: 80px;">
+                    <p style="color: #37373f;">TESTIMONIALS</p>
+                    <p style="color: black; ">WHAT ARE THEY <span class="abt" style="font-size: 30px;">SAYING ABOUT US</span></p>
+
+                </div>
+                <div class="row6r2">
+                    <div class="row6left">
+                    <p><span>"</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores tenetur nesciunt voluptatem vel nisi aspernatur aliquid architecto officia rem quidem, sint repellat dolorem quaerat voluptate <br><span>"</span></p>
+                    <h1>John Larson</h1>
+                    <p style="padding-bottom: 10px;">Enterpreneur</p>
+                    <p style="color: yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</p>
+                    </div>
+                    <div class="row6right">
+                        <img src="img/testimonials/testimonials-4.jpg" alt="" srcset="">
+                    </div>
+
+                </div>
+                <div class="row6r3">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+        </div>
+            <!-- end testimonials -->
+
+            <!-- start Events -->
+
+        <div class="row7">
+                <div class="row7top">
+                    <p>EVENTS</p>
+                    <p style="color: black;">SHARE <span class="abt" style="font-size: 30px;">YOUR MOMENTS</span> IN OUR RESTAURANT</p>
+
+
+
+                </div>
+                <div class="row7bot">
+                    <div class="row7botcol1 imgr7col1">
+                        <h3><b>Birthday Parties</b></h3>    
+                        <h2><b style="text-decoration: underline red;">$499</b></h2>      
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus architecto vitae expedita quos dolorum? Repellendus, voluptatibus </p>          
+                    </div>
+                    <div class="row7botcol1 imgr7col2">
+                        <h3><b>Custom Parties</b></h3>    
+                        <h2><b style="text-decoration: underline red;">$99</b></h2>      
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus architecto vitae expedita quos dolorum? Repellendus, voluptatibus </p>          
+                    </div>
+                    <div class="row7botcol1 imgr7col3">
+                        <h3><b>Private Parties</b></h3>    
+                        <h2><b style="text-decoration: underline red;">$289</b></h2>      
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus architecto vitae expedita quos dolorum? Repellendus, voluptatibus </p>       
+
+                    </div>
+                    <div class="row6r3">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+        </div>
+            <!-- end Events -->
+
+            <!-- start chefs  -->
+
+        <div class="row8">
+            <div class="row8top">
+                <p style="padding-bottom:15px ;">CHEFS</p>
+                <p style="color: black;font-size: 30px;">SHARE <span class="abt" style="font-size: 30px;">YOUR MOMENTS</span> IN OUR RESTAURANT</p>
+
+            </div>
+            <div class="row8bot">
+                <div class="ro8botcol1">
+                    <img src="img/chefs/chefs-1.jpg" alt="" class="row8botimg">
+                    <h1>Walter White</h1>
+                    <p>Master Cheif</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, sit!</p>
+                </div>
+                <div class="ro8botcol1">
+                    <img src="img/chefs/chefs-2.jpg" alt="" class="row8botimg">
+                    <h1>Walter White</h1>
+                    <p>Master Cheif</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, sit!</p>
+                </div>
+                <div class="ro8botcol1">
+                    <img src="img/chefs/chefs-3.jpg" alt="" class="row8botimg">
+                    <h1>Walter White</h1>
+                    <p>Master Cheif</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, sit!</p>
+                </div>
+            </div>
+        </div>
+            <!-- end chefs  -->
+
+            <!-- start book a table  -->
+        <div class="row9">
+            <div class="row9top">
+                <p style="padding-bottom:15px ;">BOOK A TABLE</p>
+                <p style="color: black;font-size: 30px;">BOOK <span class="abt" style="font-size: 30px;">YOUR STAY</span> WITH US</p>
+            </div>
+            <div class="row9bot">
+                <div class="row9bleft">
+                    <img src="img/reservation.jpg" alt="" class="row9botimg">
+                </div>
+                <div class="row9bright">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="phone" placeholder="Your Phone">
+                    <input type="date" placeholder="Date">
+                    <input type="time" placeholder="Time">
+                    <input type="number" placeholder="# of people">
+                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <input type="button" value="Book a Table" style="border-radius: 20px; margin-left: 35%; border: none;">
+
+                </div>
+            </div>
+        </div>
+        <!-- end book a table  -->
+
+        <div class="row10">
+            <div class="row10top">
+                <p style="padding-bottom:15px ;">BOOK A TABLE</p>
+                <p style="color: black;font-size: 30px;">CHECK <span class="abt" style="font-size: 30px;">OUR GALLERY</span></p>
+            </div>
+            <div class="row10bottom">
+                <div class="r10bimg">
+                    <img src="img/gallery/gallery-1.jpg" alt="" srcset="">
+                </div>
+                <div class="r10bimg">
+                    <img src="img/gallery/gallery-2.jpg" alt="">
+                </div>
+                <div class="r10bimg">
+                    <img src="img/gallery/gallery-3.jpg" alt="" srcset="">
+                </div>
+                <div class="r10bimg">
+                    <img src="img/gallery/gallery-4.jpg" alt="" srcset="">
+                </div>
+                <div class="r10bimg">
+                    <img src="img/gallery/gallery-5.jpg" alt="" srcset="">
+                </div>
+                <div class="row6r3" >
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            
+            </div>
+           
+        </div>
+
+
+    </div>
+ 
+    
+</body>
+</html>
